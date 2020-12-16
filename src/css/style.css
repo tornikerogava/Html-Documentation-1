@@ -1,0 +1,28 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  margin: ;
+}
+.nav-link {
+  font-size: 1.3vmax;
+  margin: 15px 0;
+}
+header {
+  font-family: serif;
+  font-size: 1.7vmax;
+}
+
+p {
+  font-size: 1vmax;
+  font-family: monospace, serif;
+}
+@media screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
