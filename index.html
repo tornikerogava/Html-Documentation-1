@@ -20,9 +20,7 @@
         <a href="#Prerequisites" class="nav-link">Prerequisites</a>
         <a href="#HTML_Head" class="nav-link">HTML Head</a>
         <a href="#Basic_Sections" class="nav-link"> Basic Sections</a>
-        <a href="#Text_Fundamentals" class="nav-link">Text Fundamentals</a>
         <a href="#Tutorials" class="nav-link">Tutorials</a>
-        <a href="#References" class="nav-link">References</a>
       </nav>
 
       <main id="main-doc" class="main-doc">
@@ -83,86 +81,125 @@
 
         <section class="main-section" id="HTML_Head">
           <header>HTML Head</header>
-<p>The HTML head is the contents of the &lt;head>
-   element — unlike the contents of the &lt;body> element 
-   (which are displayed on the page when loaded in a browser), 
-   the head's content is not displayed on the page. Instead, 
-   the head's job is to contain metadata about the document. In the above example, 
-   the head is quite small:</p>
+          <p>The HTML head is the contents of the &lt;head>
+            element — unlike the contents of the &lt;body> element 
+            (which are displayed on the page when loaded in a browser), 
+            the head's content is not displayed on the page. Instead, 
+            the head's job is to contain metadata about the document. In the above example, 
+            the head is quite small:
+          </p>
 
-<p><pre>
-  &lt;head>
-    &lt;meta charset="utf-8">
-    &lt;title>My test page&lt;/title>
-  &lt;/head>
-  </pre>
-</p>
+          <p>
+            <pre>
+            &lt;head>
+              &lt;meta charset="utf-8">
+              &lt;title>My test page&lt;/title>
+            &lt;/head>
+            </pre>
+          </p>
 
-<p>
-  In larger pages however, the head can get quite full.
-   Try going to some of your favorite websites and use the developer tools to check out their head contents.
-    Our aim here is not to show you how to use everything that can possibly be put in the head, 
-    but rather to teach you how to use the major elements that you'll want to include in the head, 
-    and give you some familiarity. Let's get started.
+          <p>
+            In larger pages however, the head can get quite full.
+            Try going to some of your favorite websites and use the developer tools to check out their head contents.
+              Our aim here is not to show you how to use everything that can possibly be put in the head, 
+              but rather to teach you how to use the major elements that you'll want to include in the head, 
+              and give you some familiarity. Let's get started.
+          </p>
 
+          <h2>Adding a Title</h2>
 
-</p>
+          <p>
+            We've already seen the &lt;title> element in action — 
+            this can be used to add a title to the document. 
+            This however can get confused with the &lt;h1> element,
+            which is used to add a top level heading to your body content — 
+            this is also sometimes referred to as the page title. But they are different things!
+          </p>
 
-<h2>Adding a Title</h2>
-
-<p>
-  We've already seen the &lt;title> element in action — 
-  this can be used to add a title to the document. 
-  This however can get confused with the &lt;h1> element,
-   which is used to add a top level heading to your body content — 
-   this is also sometimes referred to as the page title. But they are different things!
-</p>
-
-<ul>
-  <li>The &lt;h1> element appears on the page when loaded in the browser — 
-    generally this should be used once per page, to mark up the title of your page content
-     (the story title, or news headline, or whatever is appropriate to your usage.)</li>
-  <li>The &lt;title> element is metadata that
-     represents the title of the overall HTML document (not the document's content.)</li>
-</ul>
-
-
-
-        </section>
-
-        <section class="main-section" id="Basic_Sections">
-          <header>Basic Sections</header>
-  <p>
-    <pre>
-    &lt;DOCTYPE html>
-      &lt;html>
-        &lt;head>
-          &lt;meta charset="utf-8">
-          &lt;title>My test page&lt;/title>
-        &lt;/head>
-        &lt;body>
-          &lt;p>This is my page&lt;/p>
-        &lt;/body>
-      &lt;/html>
-    </pre>
-  </p>  
+          <ul>
+            <li>The &lt;h1> element appears on the page when loaded in the browser — 
+              generally this should be used once per page, to mark up the title of your page content
+              (the story title, or news headline, or whatever is appropriate to your usage.)</li>
+            <li>The &lt;title> element is metadata that
+              represents the title of the overall HTML document (not the document's content.)</li>
+          </ul>
 
 
-        </section>
 
-        
+                  </section>
 
-        <section class="main-section" id="Text_Fundamentals">
-          <header>Text Fundamentals</header>
+                  <section class="main-section" id="Basic_Sections">
+                    <header>Basic Sections</header>
+          <p>
+            Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:
+          </p>
+
+          <h2>Header:</h2>
+          <p>Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.
+          </p>
+
+
+          <h2> Navigation Bar: </h2>
+          <p>
+            Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.
+          </p>
+
+          <h2> Main Content:</h2>
+          <p>
+            A big area in the center that contains most of the unique content of a given webpage, for example, the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!
+          </p>
+
+          <h2>Sidebar:</h2>
+          <p>
+            Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.
+          </p>
+
+          <h2> Footer: </h2>
+          <p>
+            A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually, that information is not critical or secondary to the website itself. The footer is also sometimes used for SEO purposes, by providing links for quick access to popular content.
+          </p>
+
+          <p>
+            A very basic outline of this concept looks something like this:
+            <pre>
+            &lt;DOCTYPE html>
+              &lt;html>
+                &lt;head>
+                  &lt;meta charset="utf-8">
+                  &lt;title>My test page&lt;/title>
+                &lt;/head>
+                &lt;body>
+                  &lt;p>This is my page&lt;/p>
+                &lt;/body>
+              &lt;/html>
+            </pre>
+          </p>  
         </section>
 
         <section class="main-section" id="Tutorials">
           <header>Tutorials</header>
+
+          <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML"> Introduction to HTML</a></h2>
+          <p>This module sets the stage, getting you used to important concepts and syntax such as looking at applying HTML to text, how to create hyperlinks, and how to use HTML to structure a web page.
+          </p>
+
+          <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding">MultiMedia and Embedding</a></h2>
+          <p>
+            This module explores how to use HTML to include multimedia in your web pages, including the different ways that images can be included, and how to embed video, audio, and even entire other webpages.
+          </p>
+    
+          <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables">HTML Tables</a></h2>
+          <p>
+            Representing tabular data on a webpage in an understandable, accessible way can be a challenge. This module covers basic table markup, along with more complex features such as implementing captions and summaries.
+          </p>
+
+          <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms">HTML Forms</a></h2>
+          <p>Forms are a very important part of the Web — these provide much of the functionality you need for interacting with websites, e.g. registering and logging in, sending feedback, buying products, and more. This module gets you started with creating the client-side/front-end parts of forms.
+          </p>
+
         </section>
 
-        <section class="main-section" id="References">
-          <header>References</header>
-        </section>
+       
       </main>
     </div>
   </body>
