@@ -36,6 +36,7 @@ header {
 
 .main-section {
   padding-left: 10px;
+  padding-right: 10px;
   border-bottom: 3px solid grey;
 }
 
